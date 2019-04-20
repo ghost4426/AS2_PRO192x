@@ -28,8 +28,8 @@ public class PRO192xA2Solution {
         while (keepRunning) {
             //menu
             System.out.println("--------------Bee hive--------------");
-            System.out.println("\t1 – Create bee list");
-            System.out.println("\t2 – Attack bees");
+            System.out.println("\t1 - Create bee list");
+            System.out.println("\t2 - Attack bees");
             System.out.println("\t3 - Exit");
             System.out.print("Enter your choice (1, 2 or 3): ");
             choice = s.nextInt();
