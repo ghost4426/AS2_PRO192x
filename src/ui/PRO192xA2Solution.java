@@ -8,7 +8,6 @@ package ui;
 import business.BeeHive;
 import entity.Bee;
 import java.util.ArrayList;
-import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -65,7 +64,6 @@ public class PRO192xA2Solution {
         for (int i = 0; i < beeList.size(); i++) {
             System.out.printf("%-2d) %s\n", i + 1, beeList.get(i).toString());
         }
-
     }
 
 }

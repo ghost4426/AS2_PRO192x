@@ -30,23 +30,21 @@ public class BeeHive {
         this.listBee = new ArrayList<>();
         while (listBee.size() != 10) {
             type = new Random().nextInt(3);
-            //check type = 0 and QueenBee not yet created to create QueenBee
-            if (type == 0 && !isHasQueen) {
+
+            if (type == 0 && !isHasQueen) //check type = 0 and QueenBee not yet created to create QueenBee
+            {
                 listBee.add(new QueenBee());
                 isHasQueen = true;
-            } // check type = 1 to create WorkerBee
-            else if (type == 1) {
+            } else if (type == 1)// check type = 1 to create WorkerBee 
+            {
                 listBee.add(new WorkerBee());
-            }// check type = 2 to create WorkerBee 
-            else if (type == 2) {
+            } else if (type == 2) // check type = 2 to create WorkerBee 
+            {
                 listBee.add(new Drone());
             }
-
-            
-            //check if listbee not contain QueenBee clear and create list again
-            if (listBee.size() == 10 && !isHasQueen) {
+            if (listBee.size() == 10 && !isHasQueen) //check if listbee not contain QueenBee clear and create list again
+            {
                 listBee.clear();
-                System.out.println("------------ loop1");
             }
         }
     }
